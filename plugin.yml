@@ -1,0 +1,17 @@
+author: K0Gs
+database: false
+main: com.kogshole.alpha_bit.Alpha_bit
+name: alpha_bit
+startup: postworld
+version: '1.0'
+softdepend: [WorldGuard, CoreProtect, PlotMe]
+depends: [Vault]
+commands:
+   ab:
+      permission: alpha_bit.ab
+      description: Write a word or two.
+      usage: /<ab> [word]
+permissions:
+   alpha_bit.ab:
+      description: Gives access to all Aplpha commands
+      default: op
