@@ -113,3 +113,7 @@ public class AlphaRemoveLetters {
 	
 
 }
+/*
+ * Version 1.1 
+ * By K0Gs
+ */

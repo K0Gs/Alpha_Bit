@@ -121,6 +121,6 @@ public class Alpha_bit extends JavaPlugin implements Listener {
 	
 }
 /*
- * Version 1.0 
+ * Version 1.1
  * By K0Gs
  */

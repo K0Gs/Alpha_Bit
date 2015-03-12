@@ -17,10 +17,10 @@ import net.coreprotect.CoreProtectAPI;
 
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import com.sk89q.worldguard.protection.GlobalRegionManager;
-import com.worldcretornica.plotme.PMCommand;
-import com.worldcretornica.plotme.Plot;
-import com.worldcretornica.plotme.PlotManager;
-import com.worldcretornica.plotme.PlotMe;
+//import com.worldcretornica.plotme.PMCommand;
+//import com.worldcretornica.plotme.Plot;
+//import com.worldcretornica.plotme.PlotManager;
+//import com.worldcretornica.plotme.PlotMe;
 public class WriteLetters extends JavaPlugin implements Listener{
 
 
@@ -1277,7 +1277,7 @@ public class WriteLetters extends JavaPlugin implements Listener{
 
 									if(canBuildHere(player.getLocation(), player)){
 										if(canBuildHere(currentBlock.getLocation(), player)){
-											if(isPlotAllowed(player, currentBlock) == true){
+											//if(isPlotAllowed(player, currentBlock) == true){
 												if(font.equals("sm")){
 
 													try {
@@ -1313,10 +1313,10 @@ public class WriteLetters extends JavaPlugin implements Listener{
 												//player.sendMessage("Mats: " + mats.name().toString() + " data: " + finDir);
 												logBlock(player.getName().toString(), currentBlock.getLocation(), currentBlock.getTypeId(), currentBlock.getData() );
 												}
-											}else{
+											//}else{
 												//player.sendMessage("You are not allowed to place blocks in this plot!");
-												plotBuild = false;
-											}
+											//	plotBuild = false;
+											//}
 										}else{
 											//player.sendMessage("You are not allowed to place blocks in this region!");
 											regionBlockBuild = false;
@@ -1699,7 +1699,7 @@ public class WriteLetters extends JavaPlugin implements Listener{
 
 									if(canBuildHere(player.getLocation(), player)){
 										if(canBuildHere(currentBlock.getLocation(), player)){
-											if(isPlotAllowed(player, currentBlock) == true){
+											//if(isPlotAllowed(player, currentBlock) == true){
 												if(font.equals("sm")){
 
 													try {
@@ -1736,10 +1736,10 @@ public class WriteLetters extends JavaPlugin implements Listener{
 												//player.sendMessage("Mats: " + mats.name().toString() + " data: " + finDir);
 												logBlock(player.getName().toString(), currentBlock.getLocation(), currentBlock.getTypeId(), currentBlock.getData() );
 												}
-											}else{
+											//}else{
 												//player.sendMessage("You are not allowed to place blocks in this plot!");
-												plotBuild = false;
-											}
+											//	plotBuild = false;
+											//}
 										}else{
 											//player.sendMessage("You are not allowed to place blocks in this region!");
 											regionBlockBuild = false;
@@ -2120,7 +2120,7 @@ public class WriteLetters extends JavaPlugin implements Listener{
 
 									if(canBuildHere(player.getLocation(), player)){
 										if(canBuildHere(currentBlock.getLocation(), player)){
-											if(isPlotAllowed(player, currentBlock) == true){
+											//if(isPlotAllowed(player, currentBlock) == true){
 												if(font.equals("sm")){
 
 													try {
@@ -2157,10 +2157,10 @@ public class WriteLetters extends JavaPlugin implements Listener{
 												//player.sendMessage("Mats: " + mats.name().toString() + " data: " + finDir);
 												logBlock(player.getName().toString(), currentBlock.getLocation(), currentBlock.getTypeId(), currentBlock.getData() );
 												}
-												}else{
+											//	}else{
 												//player.sendMessage("You are not allowed to place blocks in this plot!");
-												plotBuild = false;
-											}
+												//plotBuild = false;
+											//}
 										}else{
 											//player.sendMessage("You are not allowed to place blocks in this region!");
 											regionBlockBuild = false;
@@ -2534,7 +2534,7 @@ public class WriteLetters extends JavaPlugin implements Listener{
 
 									if(canBuildHere(player.getLocation(), player)){
 										if(canBuildHere(currentBlock.getLocation(), player)){
-											if(isPlotAllowed(player, currentBlock) == true){
+											//if(isPlotAllowed(player, currentBlock) == true){
 												if(font.equals("sm")){
 
 													try {
@@ -2571,10 +2571,10 @@ public class WriteLetters extends JavaPlugin implements Listener{
 												//player.sendMessage("Mats: " + mats.name().toString() + " data: " + finDir);
 												logBlock(player.getName().toString(), currentBlock.getLocation(), currentBlock.getTypeId(), currentBlock.getData() );
 												}
-										}else{
+										//}else{
 												//player.sendMessage("You are not allowed to place blocks in this plot!");
-												plotBuild = false;
-											}
+										//		plotBuild = false;
+											//}
 										}else{
 											//player.sendMessage("You are not allowed to place blocks in this region!");
 											regionBlockBuild = false;
@@ -2653,7 +2653,7 @@ public class WriteLetters extends JavaPlugin implements Listener{
 		return false;
 	}
 
-	public static boolean isPlotAllowed(Player player, Block block){
+	/*public static boolean isPlotAllowed(Player player, Block block){
 
 		Block b = block;
 		try{
@@ -2711,7 +2711,7 @@ public class WriteLetters extends JavaPlugin implements Listener{
 			return true;
 		}
 		return true;
-	}
+	}*/
 
 
 
@@ -2728,7 +2728,7 @@ public class WriteLetters extends JavaPlugin implements Listener{
 
 }			    		
 /*
- * Version 1.0 
+ * Version 1.1 
  * By K0Gs
  */
 

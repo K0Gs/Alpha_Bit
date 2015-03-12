@@ -3,8 +3,8 @@ database: false
 main: com.kogshole.alpha_bit.Alpha_bit
 name: alpha_bit
 startup: postworld
-version: '1.0'
-softdepend: [WorldGuard, CoreProtect, PlotMe]
+version: '1.1'
+softdepend: [WorldGuard, CoreProtect]
 depends: [Vault]
 commands:
    ab:

@@ -289,6 +289,6 @@ public class alpha_bitCommandExecutor implements CommandExecutor{
 }
 
 /*
- * Version 1.0 
+ * Version 1.1
  * By K0Gs
  */
