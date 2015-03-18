@@ -24,6 +24,10 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 
 
 public class Alpha_bit extends JavaPlugin implements Listener {
+	public static Alpha_bit instance;
+	public CoreProtectAPI CoreProtect;
+	
+	
     public void onDisable() {
     	log.info(String.format("[%s] Disabled Version %s", getDescription().getName(), getDescription().getVersion()));
         
@@ -34,8 +38,10 @@ public class Alpha_bit extends JavaPlugin implements Listener {
 
     
     public void onEnable() {
-        
-    	CoreProtectAPI CoreProtect = getCoreProtect();
+        instance = this;
+		instance.getServer().broadcastMessage("[Alpha_bit] Now Loading...]");
+		
+    	CoreProtect = getCoreProtect();
     	if (CoreProtect!=null){ 
     	  CoreProtect.testAPI(); 
     	}

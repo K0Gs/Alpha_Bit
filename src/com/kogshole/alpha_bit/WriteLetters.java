@@ -2620,16 +2620,10 @@ public class WriteLetters extends JavaPlugin implements Listener{
 		return true;
 	}
 	public static boolean logBlock(String playerName, Location locate, int blockType, byte blockData ){
-		try{
-			CoreProtectAPI CoreProtect = new CoreProtect().getAPI();
-		}
-		catch(NoClassDefFoundError e){
-			return true;
-		}
-		CoreProtectAPI CoreProtect = new CoreProtect().getAPI();
-		if (CoreProtect!=null){
+
+		if (Alpha_bit.instance.CoreProtect!=null){
 			@SuppressWarnings("unused")
-			boolean success = CoreProtect.logPlacement(playerName, locate, blockType, blockData);        
+			boolean success = Alpha_bit.instance.CoreProtect.logPlacement(playerName, locate, blockType, blockData);        
 			return true;
 
 		}
